@@ -16,10 +16,10 @@ import com.example.composecharactersbase.ui.theme.ComposeCharactersBaseTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContent {
-            CharacterApp()
+            ComposeCharactersBaseTheme {
+                CharacterApp()
+            }
         }
     }
 }
-
